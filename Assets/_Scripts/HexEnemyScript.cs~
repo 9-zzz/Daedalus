@@ -1,0 +1,59 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class HexEnemyScript : MonoBehaviour
+{
+  public GameObject hexsTarget;
+  public int hexsHealth=5;
+  private bool Activated = false;
+
+  void Start()
+  {
+    hexsHealth = 5;
+  }
+
+  void Update()
+  {
+    if(hexsHealth >= 0)
+    {
+      float distance = Vector3.Distance(transform.position, hexsTarget.transform.position);
+
+      if(distance < 100)
+        Activated = true;
+
+      if(Activated){
+
+        transform.LookAt(hexsTarget.transform.position);
+
+        if (distance < 20)
+        {
+          rigidbody.AddRelativeForce(new Vector3(0, 0, 100));
+          transform.Translate(Vector3.forward * (Time.deltaTime*50), Space.Self);
+        }
+        else
+        {
+          rigidbody.AddRelativeForce(new Vector3(0, 0, 20));
+        }
+        //transform.Translate(Vector3.forward * (Time.deltaTime*5), Space.Self);
+      }
+    }
+    else
+    {
+      Destroy(gameObject);
+      Debug.Log("adfsdfasdasd");
+    }
+  }
+
+  void OnTriggerEnter(Collider other)
+  {
+    if(Activated)
+    {
+      if (other.CompareTag("PlayerBullet"))
+      {
+        hexsHealth--;
+        rigidbody.AddRelativeForce(new Vector3(0, 0, -2000));
+      }
+    }
+  }
+
+}

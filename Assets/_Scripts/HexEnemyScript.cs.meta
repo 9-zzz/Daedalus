@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: dbeacf06447670d4bb4c6683d8cb382d
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - hexsTarget: {instanceID: 0}
+  - hexsSound: {fileID: 8300000, guid: 431f6ed7d0063714e9dfbcbd19b041f7, type: 3}
+  - hexsDeath: {fileID: 8300000, guid: caaf0bd2a23440742964baa7d23dfc5c, type: 3}
+  - deathExpl: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

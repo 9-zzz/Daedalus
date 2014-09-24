@@ -1,0 +1,11 @@
+having multiple objects access the sampe script, even between ammo and dash
+
+be wary of starting coroutines as they use strings. could be bad at runtime.
+//solved, you can pass the function or ienum with () essentially calling it.
+
+vars are cool!
+
+split up tasks, like sound and collision, optimize how little some object
+does. OBSERVER PATTERN - design patterns, encapsulation
+
+Tobias center of mass, has changed. not accounted for 9/23/14

@@ -1,0 +1,17 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class Melee : MonoBehaviour
+{
+
+  public GameObject Sword;
+
+  void Update()
+  {
+    if (Input.GetMouseButtonDown(1))
+    {
+      Instantiate(Sword, transform.position, transform.rotation);
+    }
+  }
+
+}

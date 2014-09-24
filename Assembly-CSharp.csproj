@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{EEA6B8E0-465D-8277-A326-44E3AA2BC381}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Pixelplacement\iTweenPath\iTweenPath.cs" />
+     <Compile Include="Assets\Scripts\AppendCharacter.cs" />
+     <Compile Include="Assets\Scripts\ChangeColor.cs" />
+     <Compile Include="Assets\Scripts\IgnoreRaycast.cs" />
+     <Compile Include="Assets\Scripts\PrismEffect.cs" />
+     <Compile Include="Assets\Scripts\ScrollDetailTexture.cs" />
+     <Compile Include="Assets\Scripts\ShowAmmoLabel.cs" />
+     <Compile Include="Assets\Scripts\ShowScoreValue.cs" />
+     <Compile Include="Assets\Scripts\ShowSliderValue.cs" />
+     <Compile Include="Assets\Scripts\ShowSliderValueAmmo.cs" />
+     <Compile Include="Assets\Scripts\ShowSliderValueHealth.cs" />
+     <Compile Include="Assets\Scripts\ShowSliderValueLars.cs" />
+     <Compile Include="Assets\Scripts\ShowTriggerValue.cs" />
+     <Compile Include="Assets\Scripts\TiltWindow.cs" />
+     <Compile Include="Assets\Scripts\ToggledObject.cs" />
+     <Compile Include="Assets\XInputDotNet\Examples\XInputTestCS.cs" />
+     <Compile Include="Assets\_Scripts\AutoClearText.cs" />
+     <Compile Include="Assets\_Scripts\AutoDestructParticleSystem.cs" />
+     <Compile Include="Assets\_Scripts\BulletCollision.cs" />
+     <Compile Include="Assets\_Scripts\CursorLock.cs" />
+     <Compile Include="Assets\_Scripts\Helper.cs" />
+     <Compile Include="Assets\_Scripts\HexEnemyScript.cs" />
+     <Compile Include="Assets\_Scripts\HexPortal.cs" />
+     <Compile Include="Assets\_Scripts\HexPortal1.cs" />
+     <Compile Include="Assets\_Scripts\HexPortal2.cs" />
+     <Compile Include="Assets\_Scripts\LarsAi.cs" />
+     <Compile Include="Assets\_Scripts\Melee.cs" />
+     <Compile Include="Assets\_Scripts\ModifyDashBar.cs" />
+     <Compile Include="Assets\_Scripts\PickupCollisions.cs" />
+     <Compile Include="Assets\_Scripts\PlatFloat.cs" />
+     <Compile Include="Assets\_Scripts\PlayerHealth.cs" />
+     <Compile Include="Assets\_Scripts\ReplenishAmmo.cs" />
+     <Compile Include="Assets\_Scripts\RestartNow.cs" />
+     <Compile Include="Assets\_Scripts\SendingPositiveVibes.cs" />
+     <Compile Include="Assets\_Scripts\SetColorOfSpecialBar.cs" />
+     <Compile Include="Assets\_Scripts\Shoot.cs" />
+     <Compile Include="Assets\_Scripts\StopVibes.cs" />
+     <Compile Include="Assets\_Scripts\StrangeGooDialogue.cs" />
+     <Compile Include="Assets\_Scripts\TP_Animator.cs" />
+     <Compile Include="Assets\_Scripts\TP_Camera.cs" />
+     <Compile Include="Assets\_Scripts\TP_Controller.cs" />
+     <Compile Include="Assets\_Scripts\TP_Motor.cs" />
+     <Compile Include="Assets\_Scripts\autoDestroyJsphere.cs" />
+     <Compile Include="Assets\_Scripts\dashBar.cs" />
+     <Compile Include="Assets\_Scripts\dashPickUp.cs" />
+     <Compile Include="Assets\_Scripts\enemysBulletCollision.cs" />
+     <Compile Include="Assets\_Scripts\haloFloatSpin.cs" />
+     <Compile Include="Assets\_Scripts\healthBar.cs" />
+     <Compile Include="Assets\_Scripts\hexrotateysrot.cs" />
+     <Compile Include="Assets\_Scripts\loadLevel1.cs" />
+     <Compile Include="Assets\_Scripts\newCrosshair.cs" />
+     <Compile Include="Assets\_Scripts\oldcrosshair.cs" />
+     <Compile Include="Assets\_Scripts\platformiTween.cs" />
+     <Compile Include="Assets\_Scripts\quadBody.cs" />
+     <Compile Include="Assets\_Scripts\quadHead.cs" />
+     <Compile Include="Assets\_Scripts\ringrot.cs" />
+     <Compile Include="Assets\_Scripts\shownumofjumps.cs" />
+     <Compile Include="Assets\_Scripts\specialBeamMesh.cs" />
+     <Compile Include="Assets\_Scripts\swordSlash.cs" />
+     <Compile Include="Assets\_Scripts\tobiasAi.cs" />
+     <Compile Include="Assets\_Scripts\toonOutLineAccess.cs" />
+     <None Include="Assets\_Materials\Toon Basic Outline-Alpha.shader" />
+     <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
+     <None Include="Assets\XInputDotNet\MITLicense.txt" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\To-Do-List.txt" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
+     <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{8ED1118F-7EF0-8DF8-781F-84D1E6CD8B22}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{E5F3B817-D6C9-90C1-100C-616827079312}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

@@ -1,0 +1,23 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class toonOutLineAccess : MonoBehaviour {
+	public Color myColor;
+
+	void Update() {
+	
+		if (Input.GetButton("Jump")){
+		
+			myColor = new Color(Random.Range(0.0f,1.0f),Random.Range(0.0f,1.0f), Random.Range(0.0f,1.0f));//rgb
+		
+			renderer.material.SetColor("_OutlineColor", myColor);
+		
+		}else{
+		
+			renderer.material.SetColor("_OutlineColor", Color.black);
+		
+		}
+
+	}
+
+}
