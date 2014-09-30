@@ -13,7 +13,7 @@ public class tobiasAi : MonoBehaviour
   void OnMouseOver()
   {
     //onScreenInfo.text = "SPECIES: TOBIAS SQUANCHILIUS\n\n\"Hi! I'm harmless and fun to shoot! Shooting me boosts your special attack bar!\nI can only be destroyed by your special attack.\"";
-    onScreenInfo.text = "TOBIAN";
+    onScreenInfo.text = "VOZRAM";
     onScreenInfo.CrossFadeAlpha(1, 1, true);
   }
 
@@ -42,7 +42,7 @@ public class tobiasAi : MonoBehaviour
   void OnCollisionEnter(Collision col)
   {
     if (col.gameObject.tag == "PlayerBullet")
-      GameObject.Find("spawnPoint").GetComponent<Shoot>().special += 6;
+      GameObject.Find("BulletspawnPoint").GetComponent<Shoot>().special += 6;
   }
 
   void OnTriggerEnter(Collider other)

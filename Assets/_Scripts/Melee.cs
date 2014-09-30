@@ -26,16 +26,6 @@ public class Melee : MonoBehaviour
 
     }
 
-    if (Input.GetMouseButtonDown(2) || Input.GetButtonDown("Fire2"))
-    {
-      //(Instantiate(Sword, swordOffset, Quaternion.Euler(-45,90,270)) as GameObject).transform.parent = transform;
-      //swordInst = Instantiate(Sword, swordOffset, transform.localRotation) as GameObject;
-      //swordInst.transform.parent = transform;
-      //swordInst.transform.localEulerAngles = new Vector3(0, 90, 270);
-      (Instantiate(Sword, swordOffset2, Quaternion.Euler(0, 90, 270)) as GameObject).transform.parent = transform;
-
-    }
-
   }
 
 }

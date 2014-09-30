@@ -28,20 +28,6 @@ public class swordSlash : MonoBehaviour
       Destroy(gameObject);
     }
 
-
-    if (Input.GetMouseButton(2) || Input.GetButton("Fire2"))
-    {
-    transform.localPosition = Vector3.Slerp(transform.localPosition, new Vector3(0, 2, 3), 0.5f);
-    //transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(34, -111, 254), Time.deltaTime * 10f);
-    transform.localRotation = Quaternion.Lerp(transform.localRotation, Quaternion.Euler(-25, 0, 0), Time.deltaTime * 12f);
-
-
-    }
-    else if(Input.GetMouseButtonUp(2) || Input.GetButtonUp("Fire2"))
-    {
-      Destroy(gameObject);
-
-    }
   }
 
   

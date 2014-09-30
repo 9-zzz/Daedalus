@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{EEA6B8E0-465D-8277-A326-44E3AA2BC381}</ProjectGuid>
+	<ProjectGuid>{45D59890-DC9F-F763-CB01-176C3CF0ED60}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -65,6 +65,7 @@
      <Compile Include="Assets\_Scripts\AutoClearText.cs" />
      <Compile Include="Assets\_Scripts\AutoDestructParticleSystem.cs" />
      <Compile Include="Assets\_Scripts\BulletCollision.cs" />
+     <Compile Include="Assets\_Scripts\CannonSpawnPoint.cs" />
      <Compile Include="Assets\_Scripts\CursorLock.cs" />
      <Compile Include="Assets\_Scripts\Helper.cs" />
      <Compile Include="Assets\_Scripts\HexEnemyScript.cs" />
@@ -77,6 +78,10 @@
      <Compile Include="Assets\_Scripts\PickupCollisions.cs" />
      <Compile Include="Assets\_Scripts\PlatFloat.cs" />
      <Compile Include="Assets\_Scripts\PlayerHealth.cs" />
+     <Compile Include="Assets\_Scripts\Plugins\Pixelplacement\iTween\Sample\MoveSample.cs" />
+     <Compile Include="Assets\_Scripts\Plugins\Pixelplacement\iTween\Sample\RotateSample.cs" />
+     <Compile Include="Assets\_Scripts\Plugins\Pixelplacement\iTween\Sample\SampleInfo.cs" />
+     <Compile Include="Assets\_Scripts\Plugins\Pixelplacement\iTween\iTween.cs" />
      <Compile Include="Assets\_Scripts\ReplenishAmmo.cs" />
      <Compile Include="Assets\_Scripts\RestartNow.cs" />
      <Compile Include="Assets\_Scripts\SendingPositiveVibes.cs" />
@@ -92,9 +97,12 @@
      <Compile Include="Assets\_Scripts\dashBar.cs" />
      <Compile Include="Assets\_Scripts\dashPickUp.cs" />
      <Compile Include="Assets\_Scripts\enemysBulletCollision.cs" />
+     <Compile Include="Assets\_Scripts\gunPickup.cs" />
      <Compile Include="Assets\_Scripts\haloFloatSpin.cs" />
      <Compile Include="Assets\_Scripts\healthBar.cs" />
+     <Compile Include="Assets\_Scripts\hexaShield.cs" />
      <Compile Include="Assets\_Scripts\hexrotateysrot.cs" />
+     <Compile Include="Assets\_Scripts\hexrotateysrotOuter.cs" />
      <Compile Include="Assets\_Scripts\loadLevel1.cs" />
      <Compile Include="Assets\_Scripts\newCrosshair.cs" />
      <Compile Include="Assets\_Scripts\oldcrosshair.cs" />
@@ -119,16 +127,16 @@
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
-     <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
+     <None Include="Assets\_Scripts\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{8ED1118F-7EF0-8DF8-781F-84D1E6CD8B22}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{30A79CB1-2550-586A-4DF8-DE129D2D0349}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{E5F3B817-D6C9-90C1-100C-616827079312}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+      <Project>{6B7C8B36-9998-3281-1B7B-7CBDAF44718D}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

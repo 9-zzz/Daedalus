@@ -8,4 +8,6 @@ vars are cool!
 split up tasks, like sound and collision, optimize how little some object
 does. OBSERVER PATTERN - design patterns, encapsulation
 
-Tobias center of mass, has changed. not accounted for 9/23/14
+special center of mass, has changed. not accounted for 9/23/14
+
+cannon shooter

@@ -19,7 +19,7 @@ public class SetColorOfSpecialBar : MonoBehaviour
 
     myColor = new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));//rgb
 
-    if (GameObject.Find("spawnPoint").GetComponent<Shoot>().fullSpecial)
+    if (GameObject.Find("BulletspawnPoint").GetComponent<Shoot>().fullSpecial)
     {
       imageThing.color = myColor;
 

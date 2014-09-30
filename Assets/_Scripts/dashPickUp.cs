@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class dashPickUp: MonoBehaviour
+public class dashPickUp : MonoBehaviour
 {
 
   bool hasSeenPlayer = false;
@@ -9,6 +9,7 @@ public class dashPickUp: MonoBehaviour
   void Start()
   {
     Physics.IgnoreCollision(GameObject.FindGameObjectWithTag("Player").GetComponent<Collider>(), collider);
+    //Physics.IgnoreCollision (GameObject.FindGameObjectWithTag ("PlayerBullet").GetComponent<Collider> (), collider);
   }
 
   // Update is called once per frame

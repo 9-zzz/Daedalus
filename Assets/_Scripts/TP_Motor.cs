@@ -56,18 +56,26 @@ public class TP_Motor : MonoBehaviour
 
     HealthVisualBar.value = playerHealth;
 
-    HealthLerpVisualBar.value = Mathf.Lerp(HealthLerpVisualBar.value, HealthVisualBar.value, (Time.deltaTime*2) );
+    HealthLerpVisualBar.value = Mathf.Lerp(HealthLerpVisualBar.value, HealthVisualBar.value, (Time.deltaTime * 2));
 
     if (!currentlyDashing)
       rechargeDashBar();
 
-      DashVisualBar.value = dashBar;
+    DashVisualBar.value = dashBar;
 
     SnapAllignCharacterWithCamera();
     ProcessMotion();
 
     if (TP_Controller.CharacterController.isGrounded)
       numOfJumps = 3;
+
+    if (Input.GetButton("RightBumper"))
+    {
+      Debug.Log("kjsahdslkjh");
+      transform.Translate(Vector3.up * 2, Space.Self);
+      transform.rigidbody.AddForce(0, 100, 0);
+    }
+
 
     //Debug.Log("number of jumps left: " + numOfJumps);
   }
@@ -177,8 +185,8 @@ public class TP_Motor : MonoBehaviour
     if (MoveVector.x != 0 || MoveVector.z != 0)
     {
       transform.rotation = Quaternion.Euler(transform.eulerAngles.x,
-          Camera.main.transform.eulerAngles.y,
-          transform.eulerAngles.z);
+    Camera.main.transform.eulerAngles.y,
+    transform.eulerAngles.z);
     }
   }
 
@@ -325,11 +333,11 @@ public class TP_Motor : MonoBehaviour
   {
     if (dashBar <= 100)
     {
-      dashBar+= dashRechargeRate;//when not dashing
+      dashBar += dashRechargeRate;//when not dashing
     }
   }
 
-  public float doDash (float speedToIncrease)
+  public float doDash(float speedToIncrease)
   {
     if (dashBar > 0)
     {
