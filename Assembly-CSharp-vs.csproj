@@ -104,11 +104,13 @@
      <Compile Include="Assets\_Scripts\hexrotateysrot.cs" />
      <Compile Include="Assets\_Scripts\hexrotateysrotOuter.cs" />
      <Compile Include="Assets\_Scripts\loadLevel1.cs" />
+     <Compile Include="Assets\_Scripts\moveEnemyMechanics.cs" />
      <Compile Include="Assets\_Scripts\newCrosshair.cs" />
      <Compile Include="Assets\_Scripts\oldcrosshair.cs" />
      <Compile Include="Assets\_Scripts\platformiTween.cs" />
      <Compile Include="Assets\_Scripts\quadBody.cs" />
      <Compile Include="Assets\_Scripts\quadHead.cs" />
+     <Compile Include="Assets\_Scripts\randomMove.cs" />
      <Compile Include="Assets\_Scripts\ringrot.cs" />
      <Compile Include="Assets\_Scripts\shownumofjumps.cs" />
      <Compile Include="Assets\_Scripts\specialBeamMesh.cs" />

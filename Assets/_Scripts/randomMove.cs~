@@ -1,0 +1,54 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class randomMove : MonoBehaviour
+{
+  int zeroOrOne;
+  Vector3 randomDirection; 
+  bool canMove = false;
+
+  // Use this for initialization
+  void Start()
+  {
+    StartCoroutine(wait());
+  }
+
+  void randMoveForward()
+  {
+    zeroOrOne = Random.Range(0,2);//range between zero and 1? WHY?!
+
+    //Vector3 randomDirection = new Vector3(Random.value, 0, Random.value);
+    if(zeroOrOne == 0)
+    {
+      randomDirection = new Vector3(0, 90.0f, 0);
+    }else if(zeroOrOne == 1){
+      randomDirection = new Vector3(0, -90.0f, 0);
+    }
+
+    Debug.Log("random yi " + randomDirection.y);
+
+    transform.Rotate(randomDirection);
+    //transform.position += transform.forward * 500f * Time.deltaTime;
+    //rigidbody.AddRelativeForce(Vector3.forward * 2000);
+  }
+
+  IEnumerator wait()
+  {
+    while(true)
+    {
+      yield return new WaitForSeconds(2.0f);
+      canMove = true;
+      randMoveForward();
+      yield return new WaitForSeconds(2.0f);
+      canMove = false;
+    }
+  }
+
+  // Update is called once per frame
+  void Update()
+  {
+    if(canMove)
+      transform.Translate(Vector3.forward * (Time.deltaTime * 10), Space.Self);
+  }
+
+}
